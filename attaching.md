@@ -15,7 +15,7 @@
 ![alt text](image.png)
 
 <h5>Del 1</h5>
-Oppdater <a href="image.png">new-right-sidebar-service</a> med variabler og funksjoner for second sidebar. IsOpen, isclose...
+Oppdater <a href="src/app/layout/new-right-sidebar/services/new-right-sidebar/new-right-sidebar.service.ts">new-right-sidebar-service</a> med variabler og funksjoner for second sidebar. IsOpen, isclose...
 <br>
 Når sidebar 2 åpnes må vi sørge før at sidebar 1 beveges til venstre med en animasjon. Det kan gjøres med ganske enkel scss.
 <br>
@@ -49,3 +49,19 @@ I tillegg er jeg mest kjent med SelectionModel for å håndtere sjekkbokser, så
 Vi oppdaterer når sidebaren lukkes ved hjelp av NgOnDestroy
 
 
+<b>Diskusjon</b>
+Bruk vanlig komponent (må kunne switche)
+
+Bruk Overlay 
+- Pros: Kan ta masse data.
+- Cons: Kan ikke åpne hvor som helst /må importere effects og nødvendige komponenter.
+
+Bruk Router-outlet
+- Pros: Kan åpne hvor som helst. Enkelt å hente frem.
+- Cons: Kan ikke ta mye data.
+
+State handling
+1. Må åpne liste over ting.
+2. Må kunne filtreres.
+3. Må kunne tilknytte.
+4. Må være reaktivt.
