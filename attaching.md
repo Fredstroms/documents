@@ -51,17 +51,23 @@ Vi oppdaterer når sidebaren lukkes ved hjelp av NgOnDestroy
 
 <b>Diskusjon</b>
 Bruk vanlig komponent (må kunne switche)
-
+- Pros: Simpelt, kan bruke input/output for data, 
+- Cons: Vanskeligere å lese, trenger spesifikk state handling.
+  
 Bruk Overlay 
-- Pros: Kan ta masse data.
+- Pros: Kan ta masse data. Ideelt for dynamisk data. 
 - Cons: Kan ikke åpne hvor som helst /må importere effects og nødvendige komponenter.
 
 Bruk Router-outlet
-- Pros: Kan åpne hvor som helst. Enkelt å hente frem.
-- Cons: Kan ikke ta mye data.
+- Pros: Kan åpne hvor som helst. Enkelt å hente frem. Smart åpne, lukke funksjon. RouterReuseStragety kan "store" routen. 
+- Cons: Kan ikke ta mye data. Mindre fleksibilitet på posisjonering
 
 State handling
 1. Må åpne liste over ting.
 2. Må kunne filtreres.
 3. Må kunne tilknytte.
 4. Må være reaktivt.
+
+Kilder: 
+https://dimitri.codes/content-sidebar-angular-routing/
+https://angular.dev/api/router/RouteReuseStrategy
