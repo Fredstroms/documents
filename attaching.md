@@ -69,5 +69,9 @@ State handling
 4. Må være reaktivt.
 
 Kilder: 
+<br>
 https://dimitri.codes/content-sidebar-angular-routing/
+<br>
 https://angular.dev/api/router/RouteReuseStrategy
+<br>
+https://medium.com/@oranaki9910/how-to-create-a-dynamic-layout-using-a-named-router-outlet-in-angular-8f211afe4ea2
