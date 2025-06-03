@@ -71,3 +71,8 @@ Must support filtering.
 Must allow associations.
 
 Must be reactive.
+
+
+Sources: 
+
+https://dimitri.codes/content-sidebar-angular-routing/ 
